@@ -72,7 +72,7 @@
       </div>
   
       <script>
-  //      
+  
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
   const emailInput = document.getElementById("emailInput");
@@ -149,6 +149,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // index2.html sayfasına yönlendir
       window.location.href = "index2.html";
+      
+      // Input değerlerini temizle
+      emailInput.value = "";
+      nameInput.value = "";
+      surnameInput.value = "";
+      passwordInput.value = "";
+    
     }
   });
 
@@ -173,6 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
     passwordInput.classList.remove("input-error");
   });
 });
+
       </script>
     </body>
   </html>
